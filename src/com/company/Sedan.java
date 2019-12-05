@@ -2,6 +2,9 @@ package com.company;
 
 import java.util.Random;
 
+/**
+ * The sedan class models a standard sedan
+ */
 public class Sedan extends Vehicle implements basicCarStuff {
   private String make;
   private String model;
@@ -9,12 +12,21 @@ public class Sedan extends Vehicle implements basicCarStuff {
   private CarTypes sedan = CarTypes.SEDAN;
   private Random rng = new Random();
 
+  /**
+   *
+   * @param make
+   * @param model
+   * @param yearMade
+   */
   public Sedan(String make, String model, int yearMade) {
     this.make = make;
     this.model = model;
     this.yearMade = yearMade;
   }
 
+  /**
+   * Prints the fields of the car in a readable way
+   */
   public void printInfo() {
     super.printInfo(sedan);
     System.out.println("It's also pretty stylish and efficient.");
@@ -22,6 +34,9 @@ public class Sedan extends Vehicle implements basicCarStuff {
         "This sedan is a " + make + " " + model + " and was made in " + yearMade + ".");
   }
 
+  /**
+   * This speeds the car up and tells you how fast it accelerated, and if the results were good
+   */
   @Override
   public void rev() {
     super.rev();

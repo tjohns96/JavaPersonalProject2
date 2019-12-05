@@ -1,7 +1,14 @@
 package com.company;
 
 import java.util.Scanner;
+/**
+ * @Author Trevor Johnson
+ * @Version 1.1
+ */
 
+/**
+ * The main class that displays sample cars, and runs the loop that allows players to create new cars and check their speed
+ */
 public class Main {
 
   public static void main(String[] args) {
